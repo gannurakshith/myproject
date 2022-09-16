@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    body{
+        /*font-size: 62.5px;*/
+        font-family: Arial, sans-serif;
+        background-color: white;
+        box-sizing: border-box;
+        background-image: url(css/images/lake.png);
+    }
+    input[type=text],#email,textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin: 8px;
+        resize: vertical;
+    }
+    input[type=submit]{
+         background-color: blue;
+         color:#fff;
+         padding: 13px 35px;
+         border: 1px solid #ccc;
+         cursor: pointer;
+         border-radius: 4px;
+         float: center;
+    }
+    input[type=submit]:hover{
+        background-color: red;
+    }
+    .contact{
+        border-radius: 5px;
+        background: rgb(0,0,0);
+        background: rgb(0,0,0,0.5);
+        color: #f1f1f1;
+        padding: 50px;
+        margin: 210px;
+    }
+    textarea{
+        height: 200px;
+    }
+    @media screen and (max-width : 774px){
+    .contact{
+       padding: 20px;
+       margin: 70px;
+        } 
+    }
+    @media screen and (max-width : 510px){
+        .contact{
+           padding: 15px;
+           margin: 30px;
+            }  
+        }
+</style>
+<body>
+<div class="contact">
+  <form >
+    <!--h1>Contact</h1-->
+    <label for="name">First Name : </label>
+    <input type="text" name="name" id="name" placeholder="First Name" required>
+    <label for="lastname">Last Name : </label>
+    <input type="text" name="lastname" placeholder="Last Name                  "required>
+    <label for="email">Email : </label>
+    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>  
+    <label for="comment">Comment : </label>
+    <textarea name="submit" id="comment" placeholder="Your Comment" requred></textarea>
+    <input type="submit"value="submit">
+  </form>
+</div>
+</body>
+</html>

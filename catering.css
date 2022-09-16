@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style:none;
+}
+body{
+    font-size: 62.5%;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color:#fff;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color:blue;
+    border-bottom: 1px solid #E2E8F0;
+    width: 100%;
+    position: fixed;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 1.2rem;
+}
+.icon {
+    display:none;
+}
+.bar {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition:all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:#fff;
+}
+.nav-menu{
+    display:flex ;
+    justify-content: space-around;
+    color: tomato;
+}
+.nav-item{
+    margin-left: 1.5rem;
+}
+a{ 
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #475569;
+}
+a:hover{
+    color: #482ff4;
+}
+.logo {
+    font-size: 2.3rem;
+    font-weight: 600px;
+    width: 400px;
+    color:#fff;
+    text-shadow:5px;
+}
+.nav-menu a{
+    color:#fff;
+    border: 1px solid transparent;
+    padding: 7px 9px;
+    border-radius: 3px;
+}
+a.ctive,a:hover{
+    border: 1px solid #ddd;
+    transition: .5s;
+}
+/*footer part*/
+.footer{
+    background-color: black;
+    padding: 0px 0px;
+    margin-top: 0%;
+}
+.footer h1{
+    color: white;
+    padding: 12px 10px;
+}
+.footer .footer-item{
+    padding-left: 7px;
+}
+.section{
+    padding: 100px;
+    margin-bottom: 150px;
+}
+
+/*mobile contanor*/
+@media screen and (max-width: 768px){
+    .nav-menu a{
+        position: relative;
+        color: black;
+    }   
+    .nav-menu{
+        position:absolute;
+        right: -100%;
+        top: 3rem;
+        flex-direction: column;
+        background-color:#fff;
+        width: 100%;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow:0 10px 27px rgba(0,0,0);
+        /*display:block;*/
+    }
+    .nav-menu.active {
+      left: 0;
+    }
+    .nav-item {
+      margin: 2.5rem;
+    }
+    .icon{
+        display:block;
+        cursor: pointer;
+    }
+    /*X-shape animation*/ 
+    .icon.active .bar:nth-child(2){
+       opacity: 0;
+    }
+    .icon.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    .icon.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .section h1{
+        font-size: 30px;
+    }
+}

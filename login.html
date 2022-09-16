@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--meta http-equiv="X-UA-Compatible" content="IE=edge"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        text-decoration: none;
+    }
+    body{
+        /*font-size: 62.5px;*/
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        background-image: url(css/images/lake.png);
+        background-color: white;
+    }
+    input[type=email],#password,#register{
+        width: 100%;
+        padding: 10px;
+        border-radius: 1px solid #ccc;
+        box-sizing: border-box;
+        margin: 10px;
+        resize: vertical;
+        border-radius: 10px;
+    }
+    input[type=submit]{
+        background-color: blue;
+        color:#fff;
+        padding: 15px 52px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        border-radius: 4px;
+        align-items: left;
+        margin: 10px 50px 0 50px;
+    }
+    input[text=submit]:hover{
+        background-color:lavender;
+    }
+     .contanor{
+         border-radius: 20px;
+         margin: 100px;
+         height: 450px;
+         padding: 20px 30px;
+         border: 200px;
+         background: rgb(0,0,0);
+         background: rgb(0,0,0,0.5);
+         color: #f1f1f1;
+     }
+     .register{
+         background-color: blue;
+         padding: 15px 52px;
+         border: 1px solid #ccc;
+         cursor: pointer;
+         text-align: center;
+         border-radius: 4px;
+         margin: 20px 200px 0 200px;
+     }
+     /*.register :hover{
+         background-color: red
+     }*/
+     #register{
+         color: #fff;
+     }
+     .or{
+        margin:-30px 0 20px 350px;
+        display: center;
+    }
+     @media screen and (max-width:760px){
+        .register{
+           background-color: blue;
+           padding: 15px 52px;
+           border: 1px solid #ccc;
+           cursor: pointer;
+           float: center;
+           border-radius: 4px;
+           margin: 10px 50px 0 50px;
+       }
+        #register:hover{
+            float: center;
+            background-color: red;
+        }
+        .or{
+            margin:-30px 0 20px 100px;
+            display: center;
+        }
+    }
+     @media screen and (max-width:630px){
+         .contanor{
+             border-radius:10px;
+             padding:15px 20px;
+             margin:100px 10px;
+             border: 100px;
+         }
+         .register{
+            background-color: blue;
+            padding: 15px 52px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            float: center;
+            border-radius: 4px;
+            margin: 10px 30px 0 30px;
+        }
+         #register:hover{
+             background-color: red;
+         }
+         .or{
+             margin:-30px 0 20px 55px;
+             display: center;
+         }
+     }
+
+</style>
+<body>
+    <div class="contanor">
+    <form>
+        <h1>Login Here</h1><br>
+        <label for="email">Email : </label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <label for="password">Password : </label>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <input type="submit" id="submit"><br><br><br><br><br>
+    </form>
+    <div class="or"><h3 style="display:center; color:darkgrey;">------------ OR ------------</h3></div>
+    <div class="register">
+    <a href="register.html" id="register">Register Now</a>
+    </div>
+    </div>
+</body>
+</html>
